@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
+import { Link, Route } from 'react-router-dom';
 import logo from './ff-logo-white.png';
 import './App.css';
 import'./style.css';
 
-// const divStyle = {
-//   color: 'blue',
-//   backgroundColor: 'black'
-// };
-
-class App extends Component {
+class Login extends React.Component {
   render() {
     return (
     <div>
       <div class="header">
-      <img src={logo} className="logo" />
+        {/* <img src={logo} className="logo" /> */}
+        <ul>
+          <li><a href="/Landing">Back</a></li>
+          <li><a href="/">Login</a></li>
+        </ul>
       </div>
-    <div className="main" style={{height:'92vh'}}>
+    <div className="main" style={{height:'90vh'}}>
       <div class="form-div">
         <p className="create-acc-text">Create Account</p>
         <form>
@@ -38,7 +38,7 @@ class App extends Component {
             </label>
           </div>
           <div class="button-div">
-            <input type="submit" value="Submit" class="submit-button"/>
+            <input type="submit" value="Sign Up" class="submit-button"/>
           </div>
         </form>
       </div>
@@ -48,4 +48,12 @@ class App extends Component {
   }
 }
 
-export default App;
+class Landing extends React.Component {
+  render() {
+    return (
+        <p>Yes hello</p>
+    );
+  }
+}
+
+export default Login;

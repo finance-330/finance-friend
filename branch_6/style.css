@@ -1,0 +1,90 @@
+body{
+    background-color:#EDEDED;
+}
+
+/* --------------------HEADER----------------------- */
+.header {
+    background-color: #70abaf;
+    overflow: hidden;
+    position:absolute;
+    width:100%;
+    z-index:99;
+    padding:15px 25px 10px 10px;
+    text-align:right;
+}
+  .header a {
+    color: white;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    font-size:18px;
+    font-family: "Open Sans";
+}
+  .header a:hover, .header a.active{
+    color:#a2cecd;
+    text-decoration: none;
+}
+.header-icon{
+    width:25px;
+    float:left;
+    margin-left:10px;
+}
+
+/* --------------------TERMS----------------------- */
+.section-title{
+    font-size:40px;
+    font-family:"Open Sans";
+    font-weight:bold;
+    margin-left:15%;
+}
+
+/* --------------------TERMS----------------------- */
+.terms-cont{
+    display: flex;
+    justify-content:center;
+}
+.term{
+    background-color:white;
+    height:500px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.carousel-item{
+text-align:center;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
+
+#example-five{
+    position: relative;
+  }
+  #example-five-checkbox {
+    display: none;
+  }
+  #example-five-checkbox:checked + #example-five:after {
+    content: "Definition";
+    background: white;
+  }
