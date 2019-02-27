@@ -87,6 +87,7 @@ body{
 .terms-cont{
     display: flex;
     justify-content:center;
+    align-items: center;
 }
 button{
     width:110px;
@@ -104,7 +105,7 @@ button{
 
 .term{
     background-color:white;
-    height:500px;
+    height:450px;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -116,6 +117,10 @@ button{
 .term-title{
     font-family:"Open Sans";
     text-align:center !important;
+}
+.def{
+    font-family:"Open Sans";
+    font-size:20px;
 }
 .carousel-item{
 text-align:center;
@@ -146,17 +151,6 @@ text-align:center;
   color: black;
 }
 
-.term-content{
-    position: relative;
-}
- .terms {
-    display: none;
-}
-.terms:checked + .term-content:after {
-    font-size:20px;
-    font-family:"Open Sans";
-  }
-
 /* --------------------LIST VIEW----------------------- */
  .list-cont{
     background-color:white;
@@ -166,5 +160,13 @@ text-align:center;
     padding:20px;
   }
 .list-term{
+    font-size:20px;
+}
+
+
+.num{
+    color:black;
+    text-align:center;
+    margin-bottom:20px;
     font-size:20px;
 }
