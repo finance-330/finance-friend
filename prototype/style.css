@@ -87,6 +87,7 @@ body{
 .terms-cont{
     display: flex;
     justify-content:center;
+    align-items: center;
 }
 button{
     width:110px;
@@ -166,5 +167,13 @@ text-align:center;
     padding:20px;
   }
 .list-term{
+    font-size:20px;
+}
+
+
+.num{
+    color:black;
+    text-align:center;
+    margin-bottom:20px;
     font-size:20px;
 }

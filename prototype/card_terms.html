@@ -26,37 +26,37 @@
             <div class="container">
                 <div id="carouselContent" class="carousel slide" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active text-center p-4">
+                        <div class="active item carousel-item text-center p-4">
                             <div class="term">
                                <input class="terms" id="term-1" type="checkbox">
                                <label for="term-1" class="term-content"><h2 class="term-title">Annual Report</h2></label>
                            </div>
                        </div>
-                        <div class="carousel-item text-center p-4">
+                        <div class="item carousel-item text-center p-4">
                             <div class="term">
                                 <input class="terms" id="term-2" type="checkbox">
                                 <label for="term-2" class="term-content"><h2 class="term-title">Arbitrage</h2></label>
                             </div>
                         </div>
-                        <div class="carousel-item text-center p-4">
+                        <div class="item carousel-item text-center p-4">
                             <div class="term">
                                 <input class="terms" id="term-3" type="checkbox">
                                 <label for="term-3" class="term-content"><h2 class="term-title">Averaging Down</h2></label>
                             </div>
                         </div>
-                        <div class="carousel-item text-center p-4">
+                        <div class="item carousel-item text-center p-4">
                             <div class="term">
                                 <input class="terms" id="term-4" type="checkbox">
                                 <label for="term-4" class="term-content"><h2 class="term-title">Bear Market</h2></label>
                             </div>
                         </div>
-                        <div class="carousel-item text-center p-4">
+                        <div class="item carousel-item text-center p-4">
                             <div class="term">
                                 <input class="terms" id="term-5" type="checkbox">
                                 <label for="term-5" class="term-content"><h2 class="term-title">Beta</h2></label>
                             </div>
                         </div>
-                        <div class="carousel-item text-center p-4">
+                        <div class="item carousel-item text-center p-4">
                             <div class="term">
                                 <input class="terms" id="term-6" type="checkbox">
                                 <label for="term-6" class="term-content"><h2 class="term-title">Blue Chip Stocks</h2></label>
@@ -72,10 +72,21 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+                <div class="num"></div>
             </div>
         </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        var totalItems = $('.carousel-item').length;
+        var currentIndex = $('div.active').index() + 1;
+        $('.num').html(''+currentIndex+' out of '+totalItems+'');
+
+        $('#carouselContent').on('slid.bs.carousel', function() {
+            currentIndex = $('div.active').index() + 1;
+        $('.num').html(''+currentIndex+' out of '+totalItems+'');
+        });
+    </script>
 </html>
