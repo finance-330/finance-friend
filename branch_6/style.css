@@ -2,6 +2,49 @@ body{
     background-color:#EDEDED;
 }
 
+/* --------------------HOME PAGE----------------------- */
+.home-menu{
+    height:100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.welcome-title{
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 50px;
+    color: #4e4e4e;
+}
+
+.home-link{
+    width: 350px;
+    display: block;
+    margin: 0px 20px;
+}
+.home-link:hover{
+    text-decoration: none;
+}
+.home-title{
+    font-family: "Open Sans";
+    font-size: 25px;
+    color: #4e4e4e;
+}
+.home-op{
+    background-color:#ED8A81;
+    height:350px;
+    margin:20px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    max-width:100%;
+    font-family: "Open Sans";
+}
+
 /* --------------------HEADER----------------------- */
 .header {
     background-color: #70abaf;
@@ -31,9 +74,7 @@ body{
 
 .section-title{
     font-size:45px;
-    /* font-family:"Open Sans"; */
     font-family:"All Round Gothic";
-    /* font-weight:bold; */
     margin-left:20%;
 }
 .section-descript{
