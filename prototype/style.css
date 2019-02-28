@@ -181,8 +181,10 @@ text-align:center;
 .learn-title{
     font-size:100px;
     font-weight:bold;
+    color: #044f5d;
 }
 .learn-cont{
+    background-color:white;
     padding: 0px 100px 50px 100px;
     display: flex;
     flex-direction:column;
@@ -191,5 +193,12 @@ text-align:center;
 }
 
 .learn-info{
-    font-size: 20px;
+    font-size: 40px;
+}
+
+.learn-link, .learn-link:hover{
+    color:#ED8A81;
+}
+.stock-text{
+    color: #044f5d;
 }
