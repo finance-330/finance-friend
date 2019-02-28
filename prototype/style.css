@@ -184,7 +184,7 @@ text-align:center;
     color: #044f5d;
 }
 .learn-cont{
-    background-color:white;
+    background-color:#ededed;
     padding: 0px 100px 50px 100px;
     display: flex;
     flex-direction:column;
@@ -193,7 +193,7 @@ text-align:center;
 }
 
 .learn-info{
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .learn-link, .learn-link:hover{
@@ -201,4 +201,8 @@ text-align:center;
 }
 .stock-text{
     color: #044f5d;
+}
+
+.chartContainer{
+    height: 400px; width: 100%; background-color: white; padding:20px;
 }
