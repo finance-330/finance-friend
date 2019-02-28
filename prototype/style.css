@@ -151,6 +151,13 @@ text-align:center;
   color: black;
 }
 
+.num{
+    color:black;
+    text-align:center;
+    margin-bottom:20px;
+    font-size:20px;
+}
+
 /* --------------------LIST VIEW----------------------- */
  .list-cont{
     background-color:white;
@@ -164,9 +171,12 @@ text-align:center;
 }
 
 
-.num{
-    color:black;
-    text-align:center;
-    margin-bottom:20px;
-    font-size:20px;
+/* --------------------DATA VIZ----------------------- */
+.learn-cont{
+    height:100vh;
+    padding:50px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
 }
