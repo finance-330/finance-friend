@@ -151,12 +151,19 @@ text-align:center;
   color: black;
 }
 
+.num{
+    color:black;
+    text-align:center;
+    margin-bottom:20px;
+    font-size:20px;
+}
+
 /* --------------------LIST VIEW----------------------- */
  .list-cont{
     background-color:white;
     margin:0px 22% 0px 20%;
     border-radius:10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(54, 46, 46, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding:20px;
   }
 .list-term{
@@ -164,9 +171,34 @@ text-align:center;
 }
 
 
-.num{
-    color:black;
-    text-align:center;
-    margin-bottom:20px;
-    font-size:20px;
+/* --------------------DATA VIZ----------------------- */
+.stock-title{
+    height:100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.learn-title{
+    font-size:100px;
+    font-weight:bold;
+    color: #044f5d;
+}
+.learn-cont{
+    background-color:white;
+    padding: 0px 100px 50px 100px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.learn-info{
+    font-size: 40px;
+}
+
+.learn-link, .learn-link:hover{
+    color:#ED8A81;
+}
+.stock-text{
+    color: #044f5d;
 }

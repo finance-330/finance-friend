@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Learn About Stocks</title>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div class="header">
+            <a href="home.html"><img class="header-icon" src="ff-logo.png"></a>
+            <a href="home.html">Home</a>
+            <a href="card_terms.html">Terms</a>                        
+            <a class="active" href="#">Learn</a>
+            <a href="#">Account</a>
+        </div>
+
+    <div class="learn-cont">
+        <div class="learn-info">
+            <div class="stock-title"><h1 id="type-title" class="learn-title"></h1></div>
+            <div class="stock-text">
+                <div class="stock-title">
+                    <p class="learn-text">
+                        <strong>Stocks</strong> (or <strong>equities</strong>) typically refer to partial ownership in a company.
+                        This can occur when a company decides to file an <strong>initial public offering (IPO)</strong> to the public, and the buying and selling of the stocks are handled by <strong>brokerages/exchanges</strong>. 
+                        <br><br>
+                        <div id="chartContainer2" style="height: 450px; width: 100%;"></div>
+                    </p>
+                </div>
+                <div class="stock-title">
+                    <p class="learn-text">
+                    Simply put, when you buy a stock from an exchange like <a class="learn-link" target=_blank href="https://robinhood.com/">Robinhood</a> or <a class="learn-link" target=_blank href="https://us.etrade.com/home">E-Trade</a>, you are agreeing to pay (typically) the price decided by the <strong>market</strong> (through trading) for one unit of the company.<br><br>
+                    </p>
+                </div>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        The value of a stock is often held to be “how many dividends the stock will yield multiplied by the amount of time the company will remain profitable”. Thus, you want to invest in stocks for companies you think are going to perform well in the long-term (or for more advanced traders, possibly in the short term). 
+                        <br><br>
+                        <div id="chartContainer" style="height: 450px; width: 100%;"></div>
+                    </p>
+                </div>
+                <br><br>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        More specifically, in trading, there exists an <strong>“order book”</strong> which people around the world have all submitted, with an order being the trade side (buy or sell), the amount (volume), and the price. These types of orders are called <strong>“limit orders”</strong> because rather than accepting the current market price, the price that will be paid is determined by whoever places the order. 
+                    </p>
+                </div>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        Someone may place an order to buy Apple at $500, but with the stock trading at $507 that order will not be filled until the price is ≤500. This may be in a few minutes, or may never happen (if Apple continues to rise). 
+                        <br>
+                        <div id="chartContainer3" style="height: 450px; width: 100%;"></div>
+                    </p>
+                </div>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        A <strong>market order</strong> only has the option for how much to buy, and exchange programs will eat through limit orders to fill the market order. Typically, market orders are charged a higher fee (as high as 7% of the purchase price), where limit orders typically have minimal to zero fees, because they add <strong>liquidity</strong>.
+                    </p>
+                </div>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        You may wonder, “what if I think a company is going to become unprofitable or lose value?” In this situation, it’s possible to <strong>short sell</strong> a stock, which means that an exchange matches you up with someone who believes the value will go up. They will “lend” you the stocks you want, which you immediately sell, and then must return to them the same amount of stocks at another time. 
+                    </p>
+                </div>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        Returning the stock is called <strong>covering a short</strong>. If you believed Apple would go down from $500 to $250, and shorted it at $500, you can cover your short at $250, meaning you made $250 since you sold at $500 and only need to buy it for $250 to pay back the person who lent it to you. If it never goes below $500, you will have lost money because you must repay it at a higher price. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="dataviz.js">
+        </script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    
+</body>
+</html>
