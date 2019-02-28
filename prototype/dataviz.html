@@ -17,23 +17,24 @@
         </div>
 
     <div class="learn-cont">
-        <div>
-            <h1>What Are Stocks?</h1>
-            <p>
-                What are stocks?
-            Stocks (or equities) typically refer to partial ownership in a company. This can occur when a company decides to file an initial public offering (IPO) to the public, and the buying and selling of the stocks are handled by brokerages/exchanges. Simply put, when you buy a stock from an exchange like Robinhood or E-Trade, you are agreeing to pay (typically) the price decided by the market (through trading) for one unit of the company. 
-            The value of a stock is often held to be “how many dividends the stock will yield multiplied by the amount of time the company will remain profitable”. Thus, you want to invest in stocks for companies you think are going to perform well in the long-term (or for more advanced traders, possibly in the short term). 
-            More specifically, in trading, there exists an “order book” which people around the world have all submitted, with an order being the trade side (buy or sell), the amount (volume), and the price. These types of orders are called “limit orders” because rather than accepting the current market price, the price that will be paid is determined by whoever places the order. Someone may place an order to buy Apple at $500, but with the stock trading at $507 that order will not be filled until the price is ≤500. This may be in a few minutes, or may never happen (if Apple continues to rise). A market order only has the option for how much to buy, and exchange programs will eat through limit orders to fill the market order. Typically, market orders are charged a higher fee (as high as 7% of the purchase price), where limit orders typically have minimal to zero fees, because they add liquidity. 
-            You may wonder, “what if I think a company is going to become unprofitable or lose value?” In this situation, it’s possible to short sell a stock, which means that an exchange matches you up with someone who believes the value will go up. They will “lend” you the stocks you want, which you immediately sell, and then must return to them the same amount of stocks at another time. Returning the stock is called covering a short. If you believed Apple would go down from $500 to $250, and shorted it at $500, you can cover your short at $250, meaning you made $250 since you sold at $500 and only need to buy it for $250 to pay back the person who lent it to you. If it never goes below $500, you will have lost money because you must repay it at a higher price. 
-            </p>
-        </div>
-        <!-- <div class="someclass">
-            <div id="bar-chart">
+        <div class="learn-info">
+            <div class="stock-title"><h1 id="type-title" class="learn-title"></h1></div>
+            <div class="stock-text">
+                <p class="learn-text">
+                Stocks (or equities) typically refer to partial ownership in a company. This can occur when a company decides to file an initial public offering (IPO) to the public, and the buying and selling of the stocks are handled by brokerages/exchanges. Simply put, when you buy a stock from an exchange like Robinhood or E-Trade, you are agreeing to pay (typically) the price decided by the market (through trading) for one unit of the company.<br><br>
+                The value of a stock is often held to be “how many dividends the stock will yield multiplied by the amount of time the company will remain profitable”. Thus, you want to invest in stocks for companies you think are going to perform well in the long-term (or for more advanced traders, possibly in the short term). <br><br>
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                <br>More specifically, in trading, there exists an “order book” which people around the world have all submitted, with an order being the trade side (buy or sell), the amount (volume), and the price. These types of orders are called “limit orders” because rather than accepting the current market price, the price that will be paid is determined by whoever places the order. Someone may place an order to buy Apple at $500, but with the stock trading at $507 that order will not be filled until the price is ≤500. This may be in a few minutes, or may never happen (if Apple continues to rise). A market order only has the option for how much to buy, and exchange programs will eat through limit orders to fill the market order. Typically, market orders are charged a higher fee (as high as 7% of the purchase price), where limit orders typically have minimal to zero fees, because they add liquidity. <br><br>
+                You may wonder, “what if I think a company is going to become unprofitable or lose value?” In this situation, it’s possible to short sell a stock, which means that an exchange matches you up with someone who believes the value will go up. They will “lend” you the stocks you want, which you immediately sell, and then must return to them the same amount of stocks at another time. Returning the stock is called covering a short. If you believed Apple would go down from $500 to $250, and shorted it at $500, you can cover your short at $250, meaning you made $250 since you sold at $500 and only need to buy it for $250 to pay back the person who lent it to you. If it never goes below $500, you will have lost money because you must repay it at a higher price. 
+                </p>
             </div>
-        </div> -->
+        </div>
+        
     </div>
         <script src="dataviz.js">
         </script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
     
 </body>
 </html>
