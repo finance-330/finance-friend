@@ -80,6 +80,9 @@ input{
     background-color: #ed8a81;
     color: white;
     border:none;
+    width:120px;
+    height:50px;
+    padding-left:5px;
 }
 
 #log-in{
@@ -117,6 +120,12 @@ input{
     align-items: center;
     height:100vh;
     background-color: #ededed;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;
 }
 .login-div{
     height:490px;
