@@ -4,6 +4,11 @@ let accounts = [
     "email": 'master@financefriend.com',
     "password": 'financefriend',
   },
+  {
+    "name": "Mrs. Finance",
+    "email": "master2@financefriend.com",
+    "password": "financefriend2",
+  }
 ];
 
 function get_profile(){
