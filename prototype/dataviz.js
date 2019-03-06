@@ -1,136 +1,81 @@
-var string = "What Are Stocks?";
-var str = string.split("");
-var el = document.getElementById('type-title');
-(function animate() {
-str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
-var running = setTimeout(animate, 90);
-})();
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Learn About Stocks</title>
+    </head>
 
-window.onload = function () {
+    <body>
+        <!-- HEADER -->
+        <div class="header">
+            <a href="home.html"><img class="header-icon" src="ff-logo.png"></a>
+            <a href="home.html">Home</a>
+            <a href="card_terms.html">Terms</a>                        
+            <a class="active" href="#">Learn</a>
+            <a href="#">Account</a>
+        </div>
 
-  var chart = new CanvasJS.Chart("chartContainer", {
-    animationEnabled: true,
-    theme: "light2",
-    title:{
-      text: "Stock Value (By Year)"
-    },
-    axisY:{
-      includeZero: false,
-      title:"Value ($)"
-    },
-    axisX:{
-      title:"Year"
-    },
-    data: [{        
-      type: "line",       
-      dataPoints: [
-        { x: 2001, y: 450 },
-        { x: 2002, y: 500},
-        { x: 2003, y: 1400, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
-        { x: 2004, y: 460 },
-        { x: 2005, y: 800 },
-        { x: 2006, y: 1000 },
-        { x: 2007, y: 480 },
-        { x: 2008, y: 700 },
-        { x: 2009, y: 300 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
-        { x: 2010, y: 900 },
-        { x: 2011, y: 480 }//,
-        //{ y: 600, x:10 }
-      ]
-    }]
-  });
-  chart.render();
-  
-  var chart2 = new CanvasJS.Chart("chartContainer2", {
-    animationEnabled: true,
-    theme: "light2", // "light1", "light2", "dark1", "dark2"
-    title:{
-      text: "Top 5 Sectors by Number of IPOs"
-    },
-    axisY: {
-      title: "Value ($)"
-    },
-    data: [{        
-      type: "column",  
-      showInLegend: true, 
-      legendMarkerColor: "grey",
-      legendText: "Number of IPOs",
-      dataPoints: [      
-        { y: 17, label: "Tech" },
-        { y: 15,  label: "Consumer Products" },
-        { y: 11,  label: "Healthcare" },
-        { y: 7,  label: "Finance" },
-        { y: 2,  label: "Industrials" },
-      ]
-    }]
-  });
-  chart2.render();
-  
-  var chart3 = new CanvasJS.Chart("chartContainer3", {
-    animationEnabled: true,
-    theme: "light2", // "light1", "light2", "dark1", "dark2"
-    exportEnabled: true,
-    title:{
-      text: "Apple Stock Price - 2016"
-    },
-    subtitles: [{
-      text: "All Prices are in USD"
-    }],
-    axisX: {
-      valueFormatString: "MMM"
-    },
-    axisY: {
-      includeZero:false, 
-      prefix: "$",
-      title: "Price"
-    },
-    axisY2: {
-      prefix: "$",
-      suffix: "bn",
-      title: "Revenue & Income",
-      tickLength: 0
-    },
-    toolTip: {
-      shared: true
-    },
-    legend: {
-      reversed: true,
-      cursor: "pointer",
-      itemclick: toggleDataSeries
-    },     
-    data: [{
-      type: "candlestick",
-      showInLegend: true,
-      name: "Stock Price",
-      yValueFormatString: "$#,##0.00",
-      xValueFormatString: "MMMM",
-      dataPoints: [   // Y: [Open, High ,Low, Close]
-        { x: new Date(2016, 0), y: [101.949997, 112.839996, 89.370003, 112.209999] },
-        { x: new Date(2016, 1), y: [112.269997, 117.589996, 96.820000, 106.919998] },
-        { x: new Date(2016, 2), y: [107.830002, 116.989998, 104.400002, 114.099998] },
-        { x: new Date(2016, 3), y: [113.750000, 120.790001, 106.309998, 117.580002] },
-        { x: new Date(2016, 4), y: [117.830002, 121.080002, 115.879997, 118.809998] },
-        { x: new Date(2016, 5), y: [118.500000, 119.440002, 108.230003, 114.279999] },
-        { x: new Date(2016, 6), y: [114.199997, 128.330002, 112.970001, 123.940002] },
-        { x: new Date(2016, 7), y: [123.849998, 126.730003, 122.070000, 126.120003] },
-        { x: new Date(2016, 8), y: [126.379997, 131.979996, 125.599998, 128.270004] },
-        { x: new Date(2016, 9), y: [128.380005, 133.500000, 126.750000, 130.990005] },
-        { x: new Date(2016, 10), y: [131.410004, 131.940002, 113.550003, 118.419998] },
-        { x: new Date(2016, 11), y: [118.379997, 122.500000, 114.000000, 115.050003] }
-      ]
-    }]
-  });
-  chart3.render();
-  
-  function toggleDataSeries(e) {
-    if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-      e.dataSeries.visible = false;
-    } else {
-      e.dataSeries.visible = true;
-    }
-    e.chart3.render();
-  }
-  
-                                                  
-  
-  }
+    <div class="learn-cont">
+        <div class="learn-info">
+            <div class="stock-title"><h1 id="type-title" class="learn-title"></h1></div>
+            <div class="stock-text">
+                <div class="stock-title">
+                    <p class="learn-text">
+                        <strong>Stocks</strong> (or <strong>equities</strong>) typically refer to partial ownership in a company.
+                        This can occur when a company decides to file an <strong>initial public offering (IPO)</strong> to the public, and the buying and selling of the stocks are handled by <strong>brokerages/exchanges</strong>. 
+                        <br><br>
+                        <div id="chartContainer2"></div>
+                    </p>
+                </div>
+                <br><br>
+                <div class="stock-title">
+                    <p class="learn-text">
+                    Simply put, when you buy a stock from an exchange like <a class="learn-link" target=_blank href="https://robinhood.com/">Robinhood</a> or <a class="learn-link" target=_blank href="https://us.etrade.com/home">E-Trade</a>, you are agreeing to pay (typically) the price decided by the <strong>market</strong> (through trading) for one unit of the company.<br><br>
+                    </p>
+                </div>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        The value of a stock is often held to be “how many dividends the stock will yield multiplied by the amount of time the company will remain profitable”. Thus, you want to invest in stocks for companies you think are going to perform well in the long-term (or for more advanced traders, possibly in the short term). 
+                        <br><br>
+                        <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+                    </p>
+                </div>
+                <br><br>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        More specifically, in trading, there exists an <strong>“order book”</strong> which people around the world have all submitted, with an order being the trade side (buy or sell), the amount (volume), and the price. These types of orders are called <strong>“limit orders”</strong> because rather than accepting the current market price, the price that will be paid is determined by whoever places the order. 
+                    </p>
+                </div>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        Someone may place an order to buy Apple at $90, but with the stock trading at around $120 that order will not be filled until the price is ≤ $90. This may be in a few minutes, or may never happen (if Apple's value on the market continues to rise). The former caveat brings about the idea that one cannot expect, or rely on a stock going down to a certain price (or up), as there is no market force that will ever guarantee this. For this reason, many people subscribe to the idea of creating a portfolio that is diverse, meaning that they acknowledge that there will be losers and thus choose a wide range of stocks to mitigate the possiblity of some of their assets underperforming.
+                        <br><br>
+                        <div id="chartContainer3" style="height: 400px; width: 100%;"></div>
+                    </p>
+                </div>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        A <strong>market order</strong> only has the option for how much to buy, and exchange programs will eat through limit orders to fill the market order. Typically, market orders are charged a higher fee (as high as 7% of the purchase price), where limit orders typically have minimal to zero fees, because they add <strong>liquidity</strong>.
+                    </p>
+                </div>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        You may wonder, “what if I think a company is going to become unprofitable or lose value?” In this situation, it’s possible to <strong>short sell</strong> a stock, which means that an exchange matches you up with someone who believes the value will go up. They will “lend” you the stocks you want, which you immediately sell, and then must return to them the same amount of stocks at another time. 
+                    </p>
+                </div>
+                <div class="stock-title">
+                    <p class="learn-text">
+                        Returning the stock is called <strong>covering a short</strong>. If you believed Apple would go down from $120 to $60, and shorted it at $120, you can cover your short at $60, meaning you made $60 since you sold at $120 and only need to buy it for $60 to pay back the person who lent it to you. If it never goes below $120, you will have lost money because you must repay it at a higher price. However, assuming the price does drop and one covers the short at any point below the price they shorted at, this will be profitable.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="dataviz.js">
+        </script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    
+</body>
+</html>
