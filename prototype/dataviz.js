@@ -12,7 +12,7 @@ window.onload = function () {
     animationEnabled: true,
     theme: "light2",
     title:{
-      text: "Company's Average Monthly"
+      text: "Stock Value (By Year)"
     },
     axisY:{
       includeZero: false,
@@ -24,18 +24,18 @@ window.onload = function () {
     data: [{        
       type: "line",       
       dataPoints: [
-        { y: 450 },
-        { y: 500},
-        { y: 1400, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
-        { y: 460 },
-        { y: 800 },
-        { y: 1000 },
-        { y: 480 },
-        { y: 700 },
-        { y: 300 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
-        { y: 900 },
-        { y: 480 },
-        { y: 600, x:10 }
+        { x: 2001, y: 450 },
+        { x: 2002, y: 500},
+        { x: 2003, y: 1400, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
+        { x: 2004, y: 460 },
+        { x: 2005, y: 800 },
+        { x: 2006, y: 1000 },
+        { x: 2007, y: 480 },
+        { x: 2008, y: 700 },
+        { x: 2009, y: 300 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+        { x: 2010, y: 900 },
+        { x: 2011, y: 480 }//,
+        //{ y: 600, x:10 }
       ]
     }]
   });
