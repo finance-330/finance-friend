@@ -206,3 +206,13 @@ text-align:center;
 .chartContainer{
     height: 400px; width: 100%; background-color: white; padding:20px;
 }
+
+/* ----------------PROFILE PAGE ----------------------*/
+.profile-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;
+    height:100vh;
+    background-color: #ededed;
+}
