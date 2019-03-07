@@ -71,7 +71,7 @@ $('#level').ready(() => {
 })
 
 function add_streak(){
-  window.alert("Congratulations!\nBecause you used Finance Friend today,\nYour streak increased by 1!")
+  window.alert("Congratulations!\nBecause you completed another lesson today,\nYour points increased by 1!")
   num1 = 7;
   //dummy, doesn't work yet
 }
