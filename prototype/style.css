@@ -2,6 +2,20 @@ body{
     background-color:#EDEDED;
 }
 
+.button{
+    background-color:#70abaf;
+    width: 190px;
+    height: 90px;
+    font-family: "Open Sans";
+    font-size: 30px;
+    border-radius: 8px;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;   
+}
+
 /* --------------------HOME PAGE----------------------- */
 .home-menu{
     height:100vh;
@@ -339,4 +353,21 @@ section{
     font-size:50px;
     color:#70abaf;
     font-weight: bold;
+}
+
+
+.streak{
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 25px;
+}
+.streak-num{
+    font-size: 50px;
+    color: firebrick;
+}
+.streak-icon{
+    width: 50px;
+    align-content: center;
+
+
 }
