@@ -30,7 +30,7 @@ function account_checker(){
   let password = $('#password').val();
   for(var i = 0; i < accounts.length; i++){
     if(accounts[i].email == email && accounts[i].password == password) {
-      return true;
+      return true; //lol this doesn't really work the way you'd want it to... We need a database
     }
   }
   return false;
@@ -69,3 +69,9 @@ $('#email').ready(() => {
 $('#level').ready(() => {
   $('#level').html(accounts[0].level);
 })
+
+function add_streak(){
+  window.alert("Congratulations!\nBecause you used Finance Friend today,\nYour streak increased by 1!")
+  num1 = 7;
+  //dummy, doesn't work yet
+}
