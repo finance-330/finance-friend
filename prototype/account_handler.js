@@ -4,12 +4,16 @@ let accounts = [
     "email": 'master@financefriend.com',
     "password": 'financefriend',
     "points": 5,
+    "streak": 1,
+    "level": "Beginner",
   },
   {
     "name": "Mrs. Finance",
     "email": "master2@financefriend.com",
     "password": "financefriend2",
     "points": 10,
+    "streak": 3,
+    "level": "Advanced",
   }
 ];
 
@@ -52,4 +56,16 @@ $('#user-name').ready(() => {
 
 $('#points').ready(() => {
   $('#points').html(accounts[0].points);
+})
+
+$('#streak').ready(() => {
+  $('#streak').html(accounts[0].streak);
+})
+
+$('#email').ready(() => {
+  $('#email').html(accounts[0].email);
+})
+
+$('#level').ready(() => {
+  $('#level').html(accounts[0].level);
 })
