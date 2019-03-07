@@ -3,11 +3,13 @@ let accounts = [
     "name": "Mr. Finance",
     "email": 'master@financefriend.com',
     "password": 'financefriend',
+    "points": 5,
   },
   {
     "name": "Mrs. Finance",
     "email": "master2@financefriend.com",
     "password": "financefriend2",
+    "points": 10,
   }
 ];
 
@@ -46,4 +48,8 @@ $('form[name=landing-form]').submit(function(e) {
 
 $('#user-name').ready(() => {
   $('#user-name').html(accounts[0].name);
+})
+
+$('#points').ready(() => {
+  $('#points').html(accounts[0].points);
 })
