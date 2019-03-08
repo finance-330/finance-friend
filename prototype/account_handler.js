@@ -30,19 +30,20 @@ function account_checker(){
   let password = $('#password').val();
   for(var i = 0; i < accounts.length; i++){
     if(accounts[i].email == email && accounts[i].password == password) {
-      return true; //lol this doesn't really work the way you'd want it to... We need a database
+      return true;
     }
   }
   return false;
 }
 
-$('form[name=login-form]').submit(function(e) {
+$('form[name=login-form]').submit((e) => {
   if(!account_checker()) {
+    window.alert("Email and/or password does not match.  Please try again.");
     return false;
   }
 });
 
-$('form[name=landing-form]').submit(function(e) {
+$('form[name=landing-form]').submit((e) => {
   if($('#check-password').val() != $('#password').val()){
     window.alert("Error: Passwords do not match!\nPassword = " + $('#password').val() + "\nConfirm Password = " + $('#check-password').val());
     return false;
