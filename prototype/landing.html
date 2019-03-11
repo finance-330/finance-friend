@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="account.css">
+        <link rel="stylesheet" href="https://use.typekit.net/pdq7lvn.css">
+        <title>Finance Friend</title>
+    </head>
+    <body>
+        <div class="landing-cont">
+            <div class="landing-left">
+                <h1 class="h1-title">finance friend</h1>
+                <h2 class="h2-title">Get started with your <br>financial education.</h2><br><br><br><br>
+                <div class="feature-list">
+                    <div class="check-div"><img class="check-icon" src="icons/check.jpg"><p class="check-text">Learn about key trading terms.</p></div>
+                    <div class="check-div"><img class="check-icon" src="icons/check.jpg"><p class="check-text">Learn about the stock market.</p></div>
+                    <div class="check-div"><img class="check-icon" src="icons/check.jpg"><p class="check-text">Track your progress.</p></div>
+                </div>
+            </div>
+            <div class="landing-right">
+                <a href="login.html"><button class="landing-button" id="log-in">LOG IN</button></a>
+                <div class="login">
+                    <h3 class="div-title">Create A Free Account</h3><br>
+                    <form name="landing-form" class="login-form" action="login.html">
+                        <input id="email" class="div-input" type="email" placeholder="Email">
+                        <input id="password" class="div-input" type="password" placeholder="Password">
+                        <input id="check-password" class="div-input" type="password" placeholder="Confirm Password"><br>
+                        <h4 class="small-text">By signing up, I agree to Finance Friend's Terms and Agreement</h4><br>
+                        <input type="submit" class="landing-button" id="sign-up" value="SIGN UP"></input>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="visibility:hidden">
+            <p id="storage"></p>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="account_handler.js"></script>
+</html>
