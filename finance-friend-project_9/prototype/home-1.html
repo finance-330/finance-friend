@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Home</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div class="header">
+            <a href="home-1.html"><img class="header-icon" src="ff-logo.png"></a>
+            <a class="active" href="home-1.html">Home</a>
+            <a href="card_terms-1.html">Terms</a>                        
+            <a href="dataviz-1.html">Learn</a>
+            <a href="profile-1.html">Account</a>
+            <a href="login.html">Logout</a>
+        </div>
+
+        <!-- HOME BODY -->
+        <div class="home-menu">
+
+            <h1 class="welcome-title">Welcome to Finance Friend, <span id="user-name-1"></span>!</h1>
+            <h2 class="home-title">What would you like to explore?</h2><br>
+
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <!-- boxes -->
+                    <a class="home-link" href="card_terms-1.html">
+                        <div class="home-op col-md-3">
+                            Key Terms
+                            <p class="box-descrip">Learn about basic finance terms</p>
+                        </div>
+                    </a>
+                    <a class="home-link" href="dataviz-1.html">
+                        <div class="home-op col-md-3">
+                            Stocks
+                            <p class="box-descrip">Find out what makes a stock lucrative</p>
+                        </div>
+                    </a>
+                    <a class="home-link" href="profile-1.html">
+                        <div class="home-op col-md-3">
+                            Profile
+                            <p class="box-descrip">View your progress</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a class="streak" href="profile-1.html"><img class="streak-icon" src="fire.png">Currently on a <span id="streak-1" class="streak-num"></span> day streak!<img class="streak-icon" src="fire.png"></a>
+
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="account_handler.js"></script>
+</html>

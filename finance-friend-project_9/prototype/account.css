@@ -1,0 +1,148 @@
+button{
+    width: 130px;
+    height:50px;
+    border-radius: 12px;
+    font-family: "Open Sans";
+}
+
+/* ----------------LANDING PAGE ----------------------*/
+.landing-cont{
+    display: flex;
+}
+.landing-left{
+    background-color: #71b1ba;
+    height: 100vh;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left:0px;
+}
+
+.h1-title{
+    color: white;
+    font-family: "All Round Gothic";
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.h2-title{
+    color: white;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 30px;
+    line-height:45px;
+}
+
+.landing-right{
+    background-color: #ededed;
+    /* height: 100vh; */
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    background-color: white;
+    height:550px;
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-title{
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #044f5d;
+    font-size:35px;
+}
+
+input{
+    margin:15px 0px;
+    width: 450px;
+    height:40px;
+    border-radius:5px;
+    border: 1px solid #979797;
+    padding-left:15px;
+}
+.small-text{
+    font-family: "Open Sans";
+    font-size: 12px;
+    color:#979797;
+}
+
+#sign-up{
+    background-color: #ed8a81;
+    color: white;
+    border:none;
+    width:120px;
+    height:50px;
+    padding-left:5px;
+}
+
+#log-in{
+    position: absolute;
+    top: 15px;
+    right:15px;
+    background-color: #ededed;
+    color: #71b1ba;
+    border: 2px solid #71b1ba;
+}
+
+.feature-list{
+    text-align:left;
+}
+.check-div{
+    display: flex;
+}
+.check-icon{
+    width:30px;
+    height:30px;
+    margin-right:15px;
+}
+.check-text{
+    font-family: "Open Sans";
+    font-size:18px;
+    color:white;
+    margin-top:5px;
+}
+
+/* ----------------LOGIN PAGE ----------------------*/
+.login-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;
+    height:100vh;
+    background-color: #ededed;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;
+}
+.login-div{
+    height:490px;
+    width:600px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;
+}
+.forgot-div{
+    display: flex;
+}
+.forgot{
+    padding:0px 30px;
+}
+#login-forgot{
+    color: #979797;
+    text-decoration: underline;
+}
