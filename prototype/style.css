@@ -360,22 +360,14 @@ section{
     text-align: center;
     font-family: "Open Sans";
     font-size: 25px;
-    color:#6d6e71;
-}
-.streak:hover{
-    color:#70abaf;
-    text-decoration: none;
 }
 .streak-num{
-    font-size: 25px;
-    color: #ED8A81;
+    font-size: 50px;
+    color: firebrick;
 }
 .streak-icon{
     width: 50px;
     align-content: center;
-}
 
-.ff-mark{
-    color: #044f5d;
-    background-color: transparent;
+
 }

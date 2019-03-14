@@ -36,6 +36,22 @@ function account_checker(){
   return false;
 }
 
+function handleClick(){
+  let email = $('#email').val();
+  let password = $('#password').val();
+  for(var i = 0; i < accounts.length; i++){
+    if(accounts[i].email == email && accounts[i].password == password) {
+      if(i==0) {
+        document.getElementById("login-form").action = "home.html";
+      }
+      else {
+        newPage = "home-" + i + ".html";
+        document.getElementById("login-form").action = newPage;
+      }
+    }
+  }
+}
+
 $('form[name=login-form]').submit((e) => {
   if(!account_checker()) {
     window.alert("Email and/or password does not match.  Please try again.");
@@ -72,7 +88,29 @@ $('#level').ready(() => {
 })
 
 function add_streak(){
-  window.alert("Congratulations!\nBecause you completed another lesson today,\nYour points increased by 1!")
-  num1 = 7;
-  //dummy, doesn't work yet
+  window.alert("Congratulations!\nBecause you completed another lesson today,\nYour streak increased by 1, and your points increased by 2!")
+  $('#streak').html(2);
+  $('#streak-1').html(4);
+  $('#points').html(7);
+  $('#points-1').html(12);
 }
+
+$('#user-name-1').ready(() => {
+  $('#user-name-1').html(accounts[1].name);
+})
+
+$('#points-1').ready(() => {
+  $('#points-1').html(accounts[1].points);
+})
+
+$('#streak-1').ready(() => {
+  $('#streak-1').html(accounts[1].streak);
+})
+
+$('#email-1').ready(() => {
+  $('#email-1').html(accounts[1].email);
+})
+
+$('#level-1').ready(() => {
+  $('#level-1').html(accounts[1].level);
+})
