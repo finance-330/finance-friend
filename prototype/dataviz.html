@@ -4,6 +4,13 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <title>Learn About Stocks</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+        <script type="text/javascript" src="tipped/js/tipped/tipped.js"></script>
+        <link rel="stylesheet" type="text/css" href="tipped/css/tipped/tipped.css"/>
     </head>
 
     <body>
@@ -23,26 +30,27 @@
                 <a class="start-link" href="#begin"><span></span>Start</a>
             </section>
             <section class="stock-title" id="begin">
+                    
                 <p class="learn-text">
-                    <strong>Stocks</strong> (or <strong>equities</strong>) typically refer to partial ownership in a company.
-                    This can occur when a company decides to file an <strong>initial public offering (IPO)</strong> to the public, and the buying and selling of the stocks are handled by <strong>brokerages/exchanges</strong>. 
+                    <span class="simple-tooltip" title="A stock refers to commodities which are traded publicly and represent an ownership share in a company">Stocks</span> (or equities) typically refer to partial ownership in a company.
+                    This can occur when a company decides to file an <span class="simple-tooltip" title="An Initial Public Offering (IPO) is the initial offering a private company makes to the public, effectively making it a publicly traded company">Initial Public Offering</span> to the public, and the buying and selling of the stocks are handled by <span class="simple-tooltip" title="An exchange is an authorized entity that creates infrastructure for buyers and sellers to meet and trade efficiently and fairly">brokerages/exchanges</span>
                     <br><div class="chartContainer" id="chartContainer2"></div>
                 </p>
             </section>
             <section class="stock-title">
                 <p class="learn-text">
-                    Simply put, when you buy a stock from an exchange like <a class="learn-link" target=_blank href="https://robinhood.com/">Robinhood</a> or <a class="learn-link" target=_blank href="https://us.etrade.com/home">E-Trade</a>, you are agreeing to pay (typically) the price decided by the <strong>market</strong> (through trading) for one unit of the company.<br><br>
+                    Simply put, when you buy a stock from an exchange like <a class="learn-link" target=_blank href="https://robinhood.com/">Robinhood</a> or <a class="learn-link" target=_blank href="https://us.etrade.com/home">E-Trade</a>, you are agreeing to pay (typically) the price decided by the <span class="simple-tooltip" title="A market simply refers to the existence of supply and demand for any commodity - there are an immense amount of markets, but in this context we refer to markets commonly traded on traditional equity exchanges">market</span> (through trading) for one unit of the company.<br><br>
                 </p>
             </section>
             <section class="stock-title">
                 <p class="learn-text">
-                    The value of a stock is often held to be “how many dividends the stock will yield multiplied by the amount of time the company will remain profitable”. Thus, you want to invest in stocks for companies you think are going to perform well in the long-term (or for more advanced traders, possibly in the short term). 
+                    The value of a stock is often held to be “how many <span class="simple-tooltip" title="Dividends are optional payments that companies can make to keep their investors happy - they are generally made when a company exceeds forecasts, on a quarterly basis">dividends</span> the stock will yield multiplied by the amount of time the company will remain profitable”. Thus, you want to invest in stocks for companies you think are going to perform well in the long-term (or for more advanced traders, possibly in the short term). 
                     <br><div id="chartContainer" style="height: 400px; width: 100%;"></div>
                 </p>
             </section>
             <section class="stock-title">
                 <p class="learn-text">
-                    More specifically, in trading, there exists an <strong>“order book”</strong> which people around the world have all submitted, with an order being the trade side (buy or sell), the amount (volume), and the price. These types of orders are called <strong>“limit orders”</strong> because rather than accepting the current market price, the price that will be paid is determined by whoever places the order. 
+                    More specifically, in trading, there exists an <span class="simple-tooltip" title="An exchange's ledger of all currently open buy, sell (and other) orders">order book</span> which people around the world have all submitted, with an order being the trade side (buy or sell), the amount (volume), and the price. These types of orders are called <span class="simple-tooltip" title="An order where the price paid is determined by the person placing the order. These are considered maker orders, since they add liquidity to the market">limit orders</span> because rather than accepting the current market price, the price that will be paid is determined by whoever places the order. 
                 </p>
             </section>
             <section class="stock-title">
@@ -53,23 +61,44 @@
             </section>
             <section class="stock-title">
                 <p class="learn-text">
-                    A <strong>market order</strong> only has the option for how much to buy, and exchange programs will eat through limit orders to fill the market order. Typically, market orders are charged a higher fee (as high as 7% of the purchase price), where limit orders typically have minimal to zero fees, because they add <strong>liquidity</strong>.
+                    A <span class="simple-tooltip" title="The most common order type, where the price paid is determined by the market. It is automatically filled for the person who executes it according to the best prices currently on the orderbook">market order</span> only has the option for how much to buy, and exchange programs will eat through limit orders to fill the market order. Typically, market orders are charged a higher fee (as high as 7% of the purchase price), where limit orders typically have minimal to zero fees, because they add <span class="simple-tooltip" title="Liquidity refers to the ease with which someone can liquidate, or convert an asset into another valuable asset">liquidity</span>. <span class="simple-tooltip" title="Volume refers to the frequency/magnitude of trading for any given market. High volume means that there are large trades occuring often on the market">Volume</span> is an important factor in liquidity - it is important to know that generally, high-volume markets are very liquid (people continually trade) so it is easy to cash out, while low-volume markets are typically illiquid, meaning an investor should know they may not be able to cash out instantly. 
                 </p>
             </section>
             <section class="stock-title">
                 <p class="learn-text">
-                    You may wonder, “what if I think a company is going to become unprofitable or lose value?” In this situation, it’s possible to <strong>short sell</strong> a stock, which means that an exchange matches you up with someone who believes the value will go up. They will “lend” you the stocks you want, which you immediately sell, and then must return to them the same amount of stocks at another time. 
+                    You may wonder, “what if I think a company is going to become unprofitable or lose value?” In this situation, it’s possible to <span class="simple-tooltip" title="Short selling is the act of borrowing someone's stock and selling instantly, promising to pay them back at a later date. It is done when someone believes an equity will lose value and wants to profit off of this hunch">short sell</span> a stock, which means that an exchange matches you up with someone who believes the value will go up. They will “lend” you the stocks you want, which you immediately sell, and then must return to them the same amount of stocks at another time. 
                 </p>
             </section>
             <section class="stock-title">
                 <p class="learn-text">
-                    Returning the stock is called <strong>covering a short</strong>. If you believed Apple would go down from $500 to $250, and shorted it at $500, you can cover your short at $250, meaning you made $250 since you sold at $500 and only need to buy it for $250 to pay back the person who lent it to you. If it never goes below $500, you will have lost money because you must repay it at a higher price. 
+                    Returning the stock is called <span class="simple-tooltip" title="At their discretion, the person shorting may decide that they want to repay the lender the stock owed, and will purchase it at the current price to repay them. Their profit is determined by the difference in price between when they borrowed and returned the stock">covering a short</span>. If you believed Apple would go down from $500 to $250, and shorted it at $500, you can cover your short at $250, meaning you made $250 since you sold at $500 and only need to buy it for $250 to pay back the person who lent it to you. If it never goes below $500, you will have lost money because you must repay it at a higher price. 
                 </p>
             </section>
+     
             <a class="start-link" id="return-home" href="home.html" onclick=add_streak()><span></span>Return Home</a><br><br>
             <a href="#" id="scroll" style="display: none;"><span></span></a>        
         </div>
-
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="tipped/js/tipped/tipped.js"></script>
+        <link rel="stylesheet" type="text/css" href="tipped/css/tipped/tipped.css"/>
+    
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $.extend(Tipped.Behaviors, {
+                'custom-slow': {
+                    fadeIn: 600,
+                    fadeOut: 600
+                }
+                });
+            Tipped.create('.simple-tooltip',
+            {
+                size: 'large',
+                skin: 'lightblue',
+                behavior: 'custom-slow',
+                containment: {padding: 30}
+            });
+        });
+        </script>
         <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
         <script src="dataviz.js"></script>
         <script src="account_handler.js"></script>
