@@ -198,7 +198,7 @@ text-align:center;
 
 /* --------------------DATA VIZ----------------------- */
 .simple-tooltip{
-    font-weight: strong;
+    font-weight: bold;
 }
 section{
     /* height:40vh; */
