@@ -12,12 +12,12 @@
             <div class="login-div">
                 <h3 class="div-title">Login to Your Account</h3><br>
                 <form id="login-form" name="login-form" class="login-form" onclick="return handleClick()" action=>
-                    <input id="email" class="div-input" type="email" placeholder="Email">
-                    <input id="password" class="div-input" type="password" placeholder="Password"><br>
-                    <div class="forgot-div">
+                    <input id="email" class="div-input" type="email" placeholder="Email" onfocus="lightenGray(this)" onblur="returnGray(this)">
+                    <input id="password" class="div-input" type="password" placeholder="Password" onfocus="lightenGray(this)" onblur="returnGray(this)"><br>
+                    <!-- <div class="forgot-div">
                         <div class="forgot"><h4 class="small-text" id="login-forgot">Forgot username? </h4></div>
                         <div class="forgot"><h4 class="small-text" id="login-forgot">Forgot password? </h4></div>
-                    </div><br>
+                    </div><br> -->
                     <input type="submit" class="landing-button" id="sign-up" value="LOG IN"></input>
                 </form>
             </div>

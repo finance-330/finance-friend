@@ -1,3 +1,12 @@
+function lightenGray(x){
+  x.style.opacity = "0.5";
+}
+
+function returnGray(x){
+  x.style.opacity = "1";
+}
+
+
 let accounts = [
   {
     "name": "Mr. Finance",

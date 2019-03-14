@@ -198,19 +198,29 @@ text-align:center;
 
 /* --------------------DATA VIZ----------------------- */
 section{
-    height:100vh;
+    /* height:40vh; */
+    padding-bottom:50px;
     display: flex;
     flex-direction:column;
     justify-content:center;
 }
+#landing-section{
+    height:100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.stock-title{
+    width:600px;
+}
 .learn-title{
-    font-size:100px;
+    font-size:70px;
     font-weight:bold;
     color: #044f5d;
 }
 .learn-cont{
     background-color:#ededed;
-    padding: 0px 100px 50px 100px;
+    /* padding: 0px 100px 50px 100px; */
     display: flex;
     flex-direction:column;
     justify-content:center;
@@ -226,7 +236,7 @@ section{
 }
 .learn-text{
     color: #044f5d;
-    font-size:30px;
+    font-size:20px;
 }
 
 .chartContainer{
@@ -246,6 +256,10 @@ section{
     background-color:#a2cecd;
     color:white;
     text-decoration: none;
+}
+
+#return-home{
+    padding:15px;
 }
 
 #scroll {
@@ -360,14 +374,19 @@ section{
     text-align: center;
     font-family: "Open Sans";
     font-size: 25px;
+    color: #70abaf;
+}
+.streak:hover{
+    text-decoration: none;
+    color: #ED8A81;
 }
 .streak-num{
-    font-size: 50px;
-    color: firebrick;
+    font-size: 20px;
+    font-weight:bold;
+    color: #ED8A81;
 }
 .streak-icon{
     width: 50px;
     align-content: center;
-
-
+    padding: 0px 10px;
 }
