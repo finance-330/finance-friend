@@ -84,7 +84,19 @@
     
         <script type="text/javascript">
         $(document).ready(function() {
-            Tipped.create('.simple-tooltip');
+            $.extend(Tipped.Behaviors, {
+                'custom-slow': {
+                    fadeIn: 600,
+                    fadeOut: 600
+                }
+                });
+            Tipped.create('.simple-tooltip',
+            {
+                size: 'large',
+                skin: 'lightblue',
+                behavior: 'custom-slow',
+                containment: {padding: 30}
+            });
         });
         </script>
         <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
