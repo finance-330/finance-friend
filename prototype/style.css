@@ -373,7 +373,7 @@ section{
 .streak{
     text-align: center;
     font-family: "Open Sans";
-    font-size: 25px;
+    font-size: 20px;
     color: #70abaf;
 }
 .streak:hover{
@@ -381,12 +381,12 @@ section{
     color: #ED8A81;
 }
 .streak-num{
-    font-size: 20px;
+    font-size: 50px;
     font-weight:bold;
     color: #ED8A81;
 }
 .streak-icon{
-    width: 50px;
+    width: 60px;
     align-content: center;
     padding: 0px 10px;
 }
