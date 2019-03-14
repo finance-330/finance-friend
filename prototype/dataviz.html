@@ -7,6 +7,9 @@
     </head>
 
     <body>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="/js/tipped/tipped.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/tipped/tipped.css"/>
         <!-- HEADER -->
         <div class="header">
             <a href="home.html"><img class="header-icon" src="ff-logo.png"></a>
@@ -22,7 +25,7 @@
             <div class="stock-text">
                 <div class="stock-title">
                     <p class="learn-text">
-                        <strong>Stocks</strong> (or <strong>equities</strong>) typically refer to partial ownership in a company.
+                        <span class="simple-tooltip" title="First tooooltip">Stocks</span> (or <strong>equities</strong>) typically refer to partial ownership in a company.
                         This can occur when a company decides to file an <strong>initial public offering (IPO)</strong> to the public, and the buying and selling of the stocks are handled by <strong>brokerages/exchanges</strong>. 
                         <br><br>
                         <div id="chartContainer2"></div>
@@ -66,12 +69,19 @@
                 </div>
                 <div class="stock-title">
                     <p class="learn-text">
-                        Returning the stock is called <strong>covering a short</strong>. If you believed Apple would go down from $120 to $60, and shorted it at $120, you can cover your short at $60, meaning you made $60 since you sold at $120 and only need to buy it for $60 to pay back the person who lent it to you. If it never goes below $120, you will have lost money because you must repay it at a higher price. However, assuming the price does drop and one covers the short at any point below the price they shorted at, this will be profitable.
-                    </p>
+                    <span class="simple-tooltip" title="Second tooltip"> 
+                        Returning the stock is called </span><strong>covering a short</strong>. If you believed Apple would go down from $120 to $60, and shorted it at $120, you can cover your short at $60, meaning you made $60 since you sold at $120 and only need to buy it for $60 to pay back the person who lent it to you. If it never goes below $120, you will have lost money because you must repay it at a higher price. However, assuming the price does drop and one covers the short at any point below the price they shorted at, this will be profitable.
+                    </p> 
                 </div>
+               
             </div>
         </div>
 
+        <script type="text/javascript">
+            $(document).ready(function() {
+                Tipped.create('simple-tooltip');
+            });
+        </script>
         <script src="dataviz.js">
         </script>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>

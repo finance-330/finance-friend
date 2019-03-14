@@ -191,6 +191,9 @@ text-align:center;
     justify-content:center;
     align-items: center;
 }
+.simple-tooltip {
+    font-weight: strong; 
+}
 
 .learn-info{
     font-size: 35px;
