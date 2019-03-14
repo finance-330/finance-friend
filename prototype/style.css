@@ -197,6 +197,9 @@ text-align:center;
 }
 
 /* --------------------DATA VIZ----------------------- */
+.simple-tooltip{
+    font-weight: strong;
+}
 section{
     /* height:40vh; */
     padding-bottom:50px;

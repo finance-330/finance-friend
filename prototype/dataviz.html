@@ -4,6 +4,13 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <title>Learn About Stocks</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+        <script type="text/javascript" src="tipped/js/tipped/tipped.js"></script>
+        <link rel="stylesheet" type="text/css" href="tipped/css/tipped/tipped.css"/>
     </head>
 
     <body>
@@ -23,8 +30,9 @@
                 <a class="start-link" href="#begin"><span></span>Start</a>
             </section>
             <section class="stock-title" id="begin">
+                    
                 <p class="learn-text">
-                    <strong>Stocks</strong> (or <strong>equities</strong>) typically refer to partial ownership in a company.
+                    <span class="simple-tooltip" title=""></span> (or <strong>equities</strong>) typically refer to partial ownership in a company.
                     This can occur when a company decides to file an <strong>initial public offering (IPO)</strong> to the public, and the buying and selling of the stocks are handled by <strong>brokerages/exchanges</strong>. 
                     <br><div class="chartContainer" id="chartContainer2"></div>
                 </p>
@@ -66,10 +74,31 @@
                     Returning the stock is called <strong>covering a short</strong>. If you believed Apple would go down from $500 to $250, and shorted it at $500, you can cover your short at $250, meaning you made $250 since you sold at $500 and only need to buy it for $250 to pay back the person who lent it to you. If it never goes below $500, you will have lost money because you must repay it at a higher price. 
                 </p>
             </section>
+            <span class='inline' data-tipped-options="inline: 'inline-tooltip-1'">Inline 1</span>
+                <div id='inline-tooltip-1' style='display:none'>Moved into the tooltip</div>
+
+                <span class='inline' data-tipped-options="inline: 'inline-tooltip-2'">Inline 2</span>
+                <div id='inline-tooltip-2' style='display:none'>Another one</div>
+
+                <script type="text/javascript">
+                $(document).ready(function() {
+                    Tipped.create('.inline');
+                });
+                </script>
             <a class="start-link" id="return-home" href="home.html" onclick=add_streak()><span></span>Return Home</a><br><br>
             <a href="#" id="scroll" style="display: none;"><span></span></a>        
         </div>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="tipped/js/tipped/tipped.js"></script>
+        <link rel="stylesheet" type="text/css" href="tipped/css/tipped/tipped.css"/>
+        <span class="simple-tooltip" title="First tooltip">I have a tooltip</span>
+        <span class="simple-tooltip" title="Second tooltip">I also have a tooltip</span>
 
+        <script type="text/javascript">
+        $(document).ready(function() {
+            Tipped.create('.simple-tooltip');
+        });
+        </script>
         <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
         <script src="dataviz.js"></script>
         <script src="account_handler.js"></script>
