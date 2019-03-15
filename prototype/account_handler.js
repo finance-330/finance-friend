@@ -73,7 +73,7 @@ $('form[name=landing-form]').submit((e) => {
     window.alert("Error: Passwords do not match!\nPassword = " + $('#password').val() + "\nConfirm Password = " + $('#check-password').val());
     return false;
   }
-  window.alert("New account created!\nEmail = " + $('#email').val() + "\nPassword = " +  $('#password').val());
+  window.alert("New account created!\nEmail = " + $('#email').val() + "\nPassword = " +  $('#password').val() + "\n(Please allow up to several minutes for the account to be registered in our system.)");
 });
 
 $('#user-name').ready(() => {
@@ -97,6 +97,7 @@ $('#level').ready(() => {
 })
 
 function add_streak(){
+  window.alert("Congratulations!\nBecause you completed another lesson today,\nYour streak increased by 1, and your points increased by 2!")
   $('#streak').html(2);
   $('#streak-1').html(4);
   $('#points').html(7);
